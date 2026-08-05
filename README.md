@@ -6,9 +6,7 @@ In day 1 we are seaching and selecting the right dataset for the project in whic
 
 ---
 
-## ==========================================================
 # Day 2 - Data Understanding Summary
-## ==========================================================
 
 ## Dataset Overview
 
