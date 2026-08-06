@@ -29,3 +29,49 @@ In day 1 we are seaching and selecting the right dataset for the project in whic
 The dataset is well-structured, lightweight, and suitable for demand forecasting, anomaly detection, inventory analysis, Power BI dashboard development, and Streamlit deployment.
 
 ---
+
+# Day 3 - Data Cleaning
+
+## Objective
+Performed comprehensive data cleaning and validation to prepare the dataset for Exploratory Data Analysis (EDA), Demand Forecasting, and Anomaly Detection.
+
+## Tasks Completed
+
+- Imported required Python libraries.
+- Loaded the raw supply chain dataset.
+- Performed basic dataset validation (rows, columns, data types).
+- Checked for missing values.
+- Checked and validated duplicate records.
+- Converted the `Date` column from string to datetime format.
+- Validated all numerical columns for negative values.
+- Verified binary columns (`Promotion_Flag` and `Stockout_Flag`).
+- Performed initial outlier screening using the IQR method.
+- Applied business rule validation (cost, price, inventory consistency).
+- Verified final dataset integrity after cleaning.
+- Saved the cleaned dataset for future analysis.
+
+## Cleaning Summary
+
+| Validation | Result |
+|------------|--------|
+| Missing Values | 0 |
+| Duplicate Rows | 0 |
+| Negative Values | 0 |
+| Invalid Business Rules | 0 |
+| Date Conversion | Completed |
+| Outlier Screening | Completed |
+| Final Dataset Shape | (91,250, 15) |
+
+## Output
+
+- Cleaned dataset saved successfully:
+  - `data/processed/supply_chain_cleaned.csv`
+
+## Status
+
+**Data Cleaning Completed Successfully**
+
+The dataset is now validated, consistent, and ready for Exploratory Data Analysis (EDA), Feature Engineering, Demand Forecasting, and Anomaly Detection.
+
+---
+
