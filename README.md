@@ -75,3 +75,60 @@ The dataset is now validated, consistent, and ready for Exploratory Data Analysi
 
 ---
 
+# Day 4 - Exploratory Data Analysis (EDA)
+
+## Objective
+
+Performed comprehensive Exploratory Data Analysis (EDA) on the cleaned supply chain dataset to understand demand patterns, inventory behavior, regional performance, supplier lead time, promotional impact, feature relationships, and data distribution. The insights generated during this phase will support Demand Forecasting and Anomaly Detection in the upcoming stages.
+
+## Tasks Completed
+
+- Imported required Python libraries.
+- Loaded the cleaned supply chain dataset.
+- Verified dataset structure and data types.
+- Converted the `Date` column to datetime format.
+- Analyzed daily demand trends using a time-series line chart.
+- Explored average daily inventory levels over time.
+- Performed region-wise demand analysis.
+- Evaluated the impact of promotional campaigns on sales.
+- Analyzed supplier lead time versus average units sold.
+- Compared Actual Units Sold with Demand Forecast.
+- Generated a Correlation Heatmap for numerical features.
+- Visualized the distribution of Units Sold using a histogram.
+- Examined potential outliers using a boxplot.
+- Interpreted business insights from every visualization.
+
+## Key Business Insights
+
+- Daily demand remained relatively stable with normal fluctuations.
+- Inventory levels followed a consistent trend throughout the year.
+- Regional demand showed slight variations across all four regions.
+- Promotional activities resulted in higher average units sold.
+- Supplier lead time had minimal impact on average sales.
+- Actual demand closely followed the generated demand forecast.
+- Strong correlations were observed between selected inventory and demand-related variables.
+- The distribution of Units Sold appeared close to normal with a few high-demand observations.
+- Boxplot confirmed the presence of valid business outliers suitable for anomaly detection rather than removal.
+
+## Visualizations Created
+
+- Daily Demand Trend
+- Inventory Trend
+- Region-wise Sales Analysis
+- Promotion Impact Analysis
+- Supplier Lead Time Analysis
+- Actual vs Forecast Demand
+- Correlation Heatmap
+- Units Sold Distribution (Histogram)
+- Units Sold Boxplot
+
+## Outcome
+
+EDA successfully identified important demand patterns, inventory behavior, feature relationships, promotional effects, and potential anomalies. These insights establish a strong foundation for Feature Engineering, Time Series Forecasting, and Machine Learning-based Anomaly Detection.
+
+## Status
+
+**Exploratory Data Analysis (EDA) Completed Successfully**
+
+---
+
