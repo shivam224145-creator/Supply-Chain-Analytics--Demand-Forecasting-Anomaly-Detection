@@ -172,3 +172,47 @@ Raw Data → Data Understanding → Data Cleaning → EDA → Feature Engineerin
 
 ---
 
+# Day 6 - Anomaly Detection Analysis
+
+Today, the project focused on identifying and analyzing unusual supply-chain observations using statistical anomaly detection techniques.
+
+### Work Completed
+
+- Selected key anomaly detection variables:
+  - Units_Sold
+  - Inventory_Level
+  - Demand_Forecast
+  - Forecast_Error
+- Applied **IQR-based anomaly detection** and created anomaly flags.
+- Applied **Z-Score-based anomaly detection** using a threshold of 3.
+- Compared IQR and Z-Score results to validate anomaly patterns.
+- Created a **Combined Anomaly Score** using both detection methods.
+- Identified **396 confirmed anomalies** from 83,750 feature-engineered observations.
+- Created a separate confirmed anomaly dataset for investigation.
+- Performed anomaly analysis by:
+  - SKU
+  - Warehouse
+  - Region
+  - Date
+  - Anomaly severity
+  - Detection driver
+- Created visualizations for anomaly trends, severity, and major anomaly drivers.
+- Added business interpretation to identify operational areas requiring further investigation.
+
+### Key Findings
+
+- Total Confirmed Anomalies: **396**
+- Normal Observations: **83,354**
+- Highest SKU anomaly count: **SKU_29 – 17**
+- Highest Warehouse anomaly count: **WH_2 – 92**
+- Highest Region anomaly count: **North – 104**
+- Highest anomaly date: **2024-03-25 – 7 anomalies**
+- Major anomaly driver: **Forecast Error – 229 signals**
+- Highest combined anomaly score observed: **5**
+
+### Output
+
+Confirmed anomalies were prepared as a separate dataset for downstream investigation and supply-chain decision support.
+
+---
+
