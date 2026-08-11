@@ -216,3 +216,31 @@ Confirmed anomalies were prepared as a separate dataset for downstream investiga
 
 ---
 
+# Day 7 :- Demand Forecasting – Baseline Forecasting
+
+### Work Completed
+- Loaded the feature-engineered supply chain dataset.
+- Created a daily demand time series by aggregating `Units_Sold`.
+- Analyzed the daily demand distribution and date range.
+- Visualized the overall daily demand trend.
+- Created a chronological 80:20 train-test split to prevent data leakage.
+- Implemented a 7-Day Moving Average forecasting baseline.
+- Implemented a 30-Day Moving Average forecasting baseline.
+- Evaluated both models using MAE, RMSE, and MAPE.
+- Compared actual demand with both baseline forecasts.
+- Selected the best-performing baseline model.
+
+### Key Results
+- Daily demand records: 335 days
+- Training records: 268 days
+- Testing records: 67 days
+- Best baseline model: **7-Day Moving Average**
+- MAE: **147.29**
+- RMSE: **169.11**
+- MAPE: **3.93%**
+
+### Conclusion
+The 7-Day Moving Average performed significantly better than the 30-Day Moving Average and will be used as the baseline benchmark for evaluating advanced forecasting models.
+
+---
+
