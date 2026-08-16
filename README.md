@@ -244,3 +244,45 @@ The 7-Day Moving Average performed significantly better than the 30-Day Moving A
 
 ---
 
+# Day 8 :- Demand Forecasting & Model Evaluation
+
+This phase focused on developing, evaluating, and selecting a reliable demand forecasting model for supply chain planning.
+
+### Key Work
+- Aggregated `Units_Sold` into a daily demand time series.
+- Created a chronological train-test split to prevent time-series data leakage.
+- Developed 7-Day and 30-Day Moving Average baseline models.
+- Built an ARIMA(1,1,1) forecasting model.
+- Compared models using MAE, RMSE, and MAPE.
+- Generated a 90-day future demand forecast using the selected model.
+- Performed forecast validation and saved the final forecast dataset.
+
+### Model Performance
+
+| Model | MAE | RMSE | MAPE |
+|---|---:|---:|---:|
+| **7-Day Moving Average** | **147.29** | **169.11** | **3.93%** |
+| 30-Day Moving Average | 476.63 | 505.14 | 12.47% |
+| ARIMA(1,1,1) | 1053.89 | 1264.51 | 25.74% |
+
+### Best Model
+**7-Day Moving Average** was selected as the best-performing model based on the lowest MAE, RMSE, and MAPE.
+
+### 90-Day Forecast
+The selected model was used to forecast demand for the next 90 days from **31-Dec-2024 to 30-Mar-2025**.
+
+- Average Forecasted Demand: **4,943.11 units/day**
+- Minimum Forecast: **4,906.86 units/day**
+- Maximum Forecast: **4,953.76 units/day**
+- Forecast Horizon: **90 days**
+
+### Business Insight
+The forecast indicates relatively stable demand over the upcoming 90 days. The forecasting results can support inventory planning, procurement optimization, replenishment decisions, and supply chain resource allocation.
+
+### Output
+The final 90-day forecast was validated with zero missing values and zero duplicate records and saved as:
+
+`data/processed/90_day_demand_forecast.csv`
+
+---
+
