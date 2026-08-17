@@ -286,3 +286,61 @@ The final 90-day forecast was validated with zero missing values and zero duplic
 
 ---
 
+# Day 9 :- Demand Forecasting & 90-Day Forecast
+
+### Objective
+The forecasting stage focused on developing, evaluating, and selecting the best-performing demand forecasting approach and generating a validated 90-day future demand forecast.
+
+### Work Completed
+
+- Loaded the final feature-engineered supply chain dataset containing **83,750 records and 33 features**.
+- Aggregated historical demand into **335 daily observations**.
+- Created a chronological train-test split with **268 training observations and 67 testing observations**.
+- Developed baseline forecasting models using:
+  - 7-Day Moving Average
+  - 30-Day Moving Average
+- Implemented and evaluated an **ARIMA(1,1,1)** model.
+- Compared forecasting models using **MAE, RMSE, and MAPE**.
+- Selected the **7-Day Moving Average** as the final forecasting model.
+
+### Model Performance
+
+| Model | MAE | RMSE | MAPE |
+|---|---:|---:|---:|
+| 7-Day Moving Average | 147.29 | 169.11 | 3.93% |
+| 30-Day Moving Average | 476.63 | 505.14 | 12.47% |
+| ARIMA(1,1,1) | 1053.89 | 1264.51 | 25.74% |
+
+### 90-Day Forecast
+
+The selected 7-Day Moving Average model was used to generate a 90-day recursive demand forecast covering **2024-12-31 to 2025-03-30**.
+
+Key results:
+
+- Average Forecasted Demand: **4,943.11 units/day**
+- Minimum Forecast: **4,906.86 units/day**
+- Maximum Forecast: **4,953.76 units/day**
+- Forecast CV: **0.10%**
+- Forecast Trend: **Stable**
+- Forecast Horizon: **90 Days**
+
+### Demand Planning Benchmarks
+
+| Planning Horizon | Estimated Demand |
+|---|---:|
+| 7 Days | 34,601.76 units |
+| 30 Days | 148,293.27 units |
+| 90 Days | 444,879.82 units |
+
+### Business Outcome
+
+The forecasting analysis indicates highly stable expected demand over the next 90 days. The selected model provides a practical demand baseline for inventory planning, procurement scheduling, and replenishment decisions. The forecast was validated for missing values, duplicate dates, date continuity, and expected forecast horizon.
+
+### Output
+
+The final forecast was saved as:
+
+`data/processed/90_day_demand_forecast.csv`
+
+---
+
